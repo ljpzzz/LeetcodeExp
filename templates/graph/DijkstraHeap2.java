@@ -9,8 +9,6 @@ public class DijkstraHeap2 {
         long[] distance = new long[n];
         Arrays.fill(distance, 0x3f3f3f3f);
         distance[source] = 0L;
-        boolean[] visited = new boolean[n];
-
         PriorityQueue<long[]> pq = new PriorityQueue<>((a, b)->{
             if(a[1] < b[1]) return -1;
             else if(a[1] > b[1]) return 1;
@@ -21,8 +19,7 @@ public class DijkstraHeap2 {
         while(pq.size() > 0){
             long[] tmp = pq.poll();
             int cur = (int)tmp[0];
-            if(visited[cur]) continue;
-            visited[cur] = true;
+            if(distance[cur] < tmp[1]) continue;
             for(int next : g[cur].keySet()){
                 int weight = g[cur].get(next);
                 if(distance[next] > distance[cur] + weight){
