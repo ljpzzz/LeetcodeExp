@@ -53,12 +53,12 @@ public class Leetcode0425_1 {
         return ans;
     }
     public static void main(String args[]){
-        List<List<String>> ans = new Leetcode425().wordSquares(new String[]{"area", "lead","wall", "lady", "ball"});
+        List<List<String>> ans = new Leetcode0425_1().wordSquares(new String[]{"area", "lead","wall", "lady", "ball"});
         for(List<String> cur : ans) {
             for(String tmp : cur) System.out.print(tmp + " " );
             System.out.println();
         }
-        List<List<String>> ans2 = new Leetcode425().wordSquares(new String[]{"abat", "baba","atan", "atal"});
+        List<List<String>> ans2 = new Leetcode0425_1().wordSquares(new String[]{"abat", "baba","atan", "atal"});
         for(List<String> cur : ans2) {
             for(String tmp : cur) System.out.print(tmp + " " );
             System.out.println();
