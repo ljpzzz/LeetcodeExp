@@ -35,8 +35,8 @@ public class Leetcode0644_1 {
         return false;
     }
     public static void main(String args[]){
-        System.out.println(new Leetcode644().findMaxAverage(new int[]{1,12,-5,-6,50,3}, 4));
-        System.out.println(new Leetcode644().findMaxAverage(new int[]{5}, 1));
+        System.out.println(new Leetcode0644_1().findMaxAverage(new int[]{1,12,-5,-6,50,3}, 4));
+        System.out.println(new Leetcode0644_1().findMaxAverage(new int[]{5}, 1));
     }
 }
 
