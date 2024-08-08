@@ -2,7 +2,9 @@ package Leetcode1274;
 
   // You should not implement it, or speculate about its implementation
 class Sea {
-      public boolean hasShips(int[] topRight, int[] bottomLeft){}
+      public boolean hasShips(int[] topRight, int[] bottomLeft){
+          return true;
+      }
 }
 
 public class Leetcode1274_1 {
